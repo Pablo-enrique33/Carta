@@ -67,10 +67,11 @@
                 return false;
             }
 
-            var width = window.innerWidth;
-            var height = window.innerHeight;
+            var width = canvas.width();
+            var height = canvas.height();
             canvas.attr("width", width);
             canvas.attr("height", height);
+
 
 
             var opts = {
