@@ -83,3 +83,28 @@ a {
 .space {
 	margin-right: 150px;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+}
+
+#canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#text {
+  text-align: center;
+  font-size: clamp(16px, 3vw, 22px); /* Ajuste automático da fonte */
+}
+
+.say {
+  display: block;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+

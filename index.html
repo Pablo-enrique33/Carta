@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Para Milena 💌</title>
     <link rel="icon" type="image/x-icon" href="https://i.loli.net/2021/06/03/lFg2V4WUcmkB98G.png">
@@ -49,7 +50,8 @@
                 <div id="clock-text">dias distante de você e a saudade aumenta cada vez mais.</div>
                 <div id="clock"></div>
             </div>
-            <canvas id="canvas" width="1100" height="680"></canvas>
+            <canvas id="canvas"></canvas>
+
         </div>
     </div>
 
@@ -65,11 +67,11 @@
                 return false;
             }
 
-            var width = canvas.width();
-            var height = canvas.height();
-
+            var width = window.innerWidth;
+            var height = window.innerHeight;
             canvas.attr("width", width);
             canvas.attr("height", height);
+
 
             var opts = {
                 seed: {
