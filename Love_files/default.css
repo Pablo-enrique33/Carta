@@ -97,14 +97,4 @@ html, body {
   height: 100vh;
 }
 
-#text {
-  text-align: center;
-  font-size: clamp(16px, 3vw, 22px); /* Ajuste automático da fonte */
-}
-
-.say {
-  display: block;
-  margin-bottom: 8px;
-  word-wrap: break-word;
-}
 
