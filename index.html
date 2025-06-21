@@ -53,7 +53,8 @@
         </div>
     </div>
 
-    <audio id="media" src="love.mp3" preload="auto" loop></audio>
+    <audio id="media" src="love.mp3" autoplay muted loop preload="auto"></audio>
+
 
     <script>
         (function () {
@@ -120,7 +121,14 @@
                     canvas.unbind("click");
                     canvas.unbind("mousemove");
                     canvas.removeClass('hand');
-                }
+                    // Desmuta e toca a música ao clicar no coração
+    const media = document.getElementById("media");
+    media.muted = false;
+    media.play().catch(err => {
+        console.log("Erro ao tocar música:", err);
+    });
+}
+                
             }).mousemove(function (e) {
                 var offset = canvas.offset(), x, y;
                 x = e.pageX - offset.left;
