@@ -55,7 +55,7 @@ function timeElapse(date) {
 	var result =
 		'<span class="digit">' + days + '</span> dias, ' +
         '<span class="digit">' + hours + '</span> horas, ' +
-        '<span class="digit">' + minutes + '</span> minutos e ' +
-        '<span class="digit">' + seconds + '</span> segundos';
+        '<span class="digit">' + minutes + '</span> min e ' +
+        '<span class="digit">' + seconds + '</span> seg';
 	$('#clock').html(result);
 }

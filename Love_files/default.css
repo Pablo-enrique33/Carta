@@ -42,21 +42,21 @@ a {
 	position: absolute;
 	left: 64px;
 	top: 550px;
-	font-size: 21px;
+	font-size: 22px;
 	display: none;
 }
 
 #clock-box a {
-	font-size: 18px;
+	font-size: 36px;
 	text-decoration: none;
 }
 
 #clock {
-	margin-left: 48px;
+	margin-left: 8px;
 }
 
 #clock .digit {
-	font-size: 64px;
+	font-size: 36px;
 }
 
 #canvas {
